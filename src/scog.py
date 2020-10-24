@@ -91,7 +91,7 @@ def scog_chapter(uname,passwd,chapterid=None):
                 [ story['content'].append(line.text) for line in content ]
                 
 
-                with open("../chapters/scog-%s.txt" % chapterid, 'w')  as outfile:
+                with open("../chapters/scog-%s.json" % chapterid, 'w')  as outfile:
                     json.dump(story,outfile)
 
             
